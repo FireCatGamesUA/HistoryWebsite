@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" href="/images/bookCircle.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/MotionPathPlugin.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/SplitText.min.js" defer></script>
+    <script src="https://kit.fontawesome.com/c97e68c202.js" crossorigin="anonymous" defer></script>
+    <script src="https://unpkg.com/gsap@3.10.4/dist/ScrollSmoother.min.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="content"> 
+            <div class="plane-container"> 
+                <div id="plane" onclick="toggleThemeLight()"></div> 
+            </div>
+        </div>
+        <div class="theme">Шедеври культури Русі-України кінця X — першої половини XI ст</div>
+    </header>
+    <main>
+        <div class="blockOne">
+            <div class="containerImgOne"> 
+                <img id="rotateMe" src="/images/bookCircle.png" alt="Rotating Image" width="250em" height="250em" onclick="toggleThemeUkr()"> 
+            </div>
+            <div class="contantOne">
+                <div class="title">Освіта та Написання книг</div>
+                <div class="text">
+                    У цей період в Русі-Україні активно розвивалася освіта та книгописання. Відомий Печерський монастир у Києві був важливим освітнім центром, де вивчалися релігійні та світські науки. Монастирські школи готували священиків та інших духовних осіб.
+                </div>
+            </div>
+        </div>
+        <div class="blockTwo">
+            <div class="containerImgTwo"> 
+                <img id="ShesternyaOne" class="shest" src="/images/shesternya.png" alt="Rotating shesternya" width="250em" height="250em"> 
+                <img id="ShesternyaTwo" class="shest" src="/images/shesternya.png" alt="Rotating shesternya" width="225em" height="225em">
+                <img id="ShesternyaThree" class="shest" src="/images/shesternya.png" alt="Rotating shesternya" width="200em" height="200em"> 
+                <img id="ShesternyaFour" class="shest" src="/images/shesternya.png" alt="Rotating shesternya" width="175em" height="175em"> 
+                <img id="ShesternyaFive" class="shest" src="/images/shesternya.png" alt="Rotating shesternya" width="150em" height="150em">
+                <img id="ShesternyaSix" class="shest" src="/images/shesternya.png" alt="Rotating shesternya" width="125em" height="125em">  
+            </div>
+            <div class="contantTwo">
+                <div class="title">Архітектура</div>
+                <div class="text">
+                    Архітектура того часу характеризується будівництвом кам'яних церков та монастирів. Найвідомішими пам'ятками архітектури є Софійський собор у Києві, який був зведений у 1037 році. Це один із найбільших та найважливіших храмів того часу, що відображає високий рівень мистецтва та архітектурної майстерності.
+                </div>
+            </div>
+            <div class="containerImgThree">
+                <img id="ShesternyaSix" class="shest" src="/images/shesternya.png" alt="Rotating shesternya" width="125em" height="125em"> 
+                <img id="ShesternyaFive" class="shest" src="/images/shesternya.png" alt="Rotating shesternya" width="150em" height="150em">
+                <img id="ShesternyaFour" class="shest" src="/images/shesternya.png" alt="Rotating shesternya" width="175em" height="175em"> 
+                <img id="ShesternyaThree" class="shest" src="/images/shesternya.png" alt="Rotating shesternya" width="200em" height="200em"> 
+                <img id="ShesternyaTwo" class="shest" src="/images/shesternya.png" alt="Rotating shesternya" width="225em" height="225em">
+                <img id="ShesternyaOne" class="shest" src="/images/shesternya.png" alt="Rotating shesternya" width="250em" height="250em">  
+            </div>
+            </div>
+        </div>
+        <div class="blockFour">
+            <div class="curve-container">
+                <svg id="curve" viewBox="0 0 200 100">
+                    <path id="path" d="M10 50 Q 50 90 100 50 T 190 50" stroke="white" stroke-width="3" fill="none" />
+                </svg>
+            </div>
+            <div class="contantFour">
+                <div class="title">Музика</div>
+                <div class="text">
+                    Музика в Русі-Україні відігравала важливу роль в культурному житті. Виконувалися духовні піснеспіви, які супроводжували церковні служби, а також світські пісні та інструментальна музика на святах та урочистостях. Відомі інструменти того часу включали гуслі, сопілки та труби.
+                </div>
+            </div>
+            <div class="curve-container">
+                <svg id="curve" viewBox="0 0 200 100">
+                    <path id="path" d="M10 50 Q 50 90 100 50 T 190 50" stroke="white" stroke-width="3" fill="none" />
+                </svg>
+            </div>
+        </div>
+        <div class="blockFive">
+            <img src="/images/tachkaLeft.png" alt="tachka" class="tach tone">
+            <div class="contantFive">
+                <div class="title">Ремесла</div>
+                <div class="text">
+                    Ремесла були надзвичайно важливі для економічного та культурного розвитку Русі-України. Майстри виготовляли знаряддя праці, прикраси, зброю, посуд та інші побутові предмети. Художнє ремесло, зокрема, різьблення по дереву, кераміка та металеві вироби, досягло високого рівня майстерності.
+                </div>
+            </div>
+            <img src="/images/tachkaRight.png" alt="tachka" class="tach ttwo">
+        </div>
+        <div class="scroll-container"> 
+            <div class="scroll-content"> 
+                <section class="panel pone" onclick="toggleThemeMod()">Живопис</section> 
+                <section class="panel pwo">Живопис того періоду також був досить розвиненим. Монастирські іконописці створювали великі та деталістичні ікони, які прикрашали храми та монастирі. Ці ікони часто містили релігійні сюжети та були важливими елементами духовного життя.</section> 
+                <section class="panel pro">Цей період був золотим віком культури Русі-України, коли мистецтво, освіта та архітектура досягли значних успіхів.</section>
+                <section class="panel end">
+                    <div class="finalText">
+                        Thank you for your attention!
+                    </div>
+                    <div class="bigFoot">
+                        <div class="avtor">FireCatGames</div>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-discord"></i>
+                        <i class="fa-solid fa-money-check"></i>
+                    </div>
+                </section>
+            </div> 
+        </div>
+    </main>
+</body>
+</html>

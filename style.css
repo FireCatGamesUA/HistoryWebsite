@@ -1,0 +1,265 @@
+@font-face{ 
+    font-family: 'Tiny'; src: url('fonts/Tiny5-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Georgia'; src: url('fonts/Georgia-PersonalUse.otf') format('opentype');
+}
+@media screen and (max-width: 500px){
+    .scroll-content {
+        display: none;
+        visibility: hidden;
+    }      
+    .panel {
+        display: none;
+        visibility: hidden;
+    }
+    body{
+        grid-template-rows: 100vh 500vh;
+    }
+    main{
+        grid-template-rows: 100vh 100vh 200vh 100vh;
+    }
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+marker:start{
+    visibility: hidden;
+}
+body{
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-rows: 100vh 600vh;
+    width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.25em;
+    font-family: 'Tiny';
+    flex-direction: row;
+}
+.theme{
+    font-family: 'Tiny';
+}
+.plane-container {
+    position: relative;
+    height: 100vh; /* Висота контейнера для літачка */
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /* Переміщення вліво */
+    align-items: center;
+}
+#plane {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url('/images/paperPlane.png'); /* Вкажіть шлях до вашого зображення літачка */
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 50;
+}
+#plane:hover{
+    cursor: pointer;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+main{
+    display: grid;
+    grid-template-rows: 100vh 100vh 200vh 100vh 100vh;
+}
+.blockOne{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.contantOne{
+    width: 50%;
+}
+.title{
+    font-size: 3em;
+    text-align: center;
+}
+.text{
+    font-size: 1.75em;
+    text-align: center;
+}
+.containerImgTwo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.containerImgThree{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.blockTwo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blockFour{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contantFour{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.scroll-container { 
+    width: 100vw; 
+    /* Ширина контейнера */ 
+    height: 100vh; 
+    /* Висота контейнера */ 
+    overflow-x: hidden; 
+    /* Приховує горизонтальну прокрутку */ 
+} 
+.scroll-content { 
+    display: flex; 
+    /* Робить контент горизонтально розташованим */
+    height: 100%;
+} 
+.panel { 
+    min-width: 100vw; 
+    /* Ширина кожної секції */ 
+    height: 100vh; 
+    /* Висота кожної секції */ 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    /* Колір фону для секцій */ 
+}
+.pone{
+    font-size: 10em;
+    font-family: 'Tiny';
+}
+.pwo{
+    font-size: 2em;
+    font-family: sans-serif;
+    text-align: center;
+    border: 0.25em solid white;
+    border-radius: 5%;
+}
+.pro{
+    font-size: 2em;
+    font-family: sans-serif;
+    text-align: center;
+}
+.end{
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+}
+.finalText{
+    font-family: 'Georgia';
+    font-size: 5em;
+}
+.bigFoot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    font-size: 2em;
+}
+i{
+    transition: 0.9s;
+}
+.fa-discord:hover{
+    transform: rotate(360deg);
+    color: #5865f2;
+    transition: 0.9s;
+    cursor: pointer;
+}
+.fa-youtube:hover{
+    transform: scale(1.25);
+    color: #ff0033;
+    transition: 0.9s;
+    cursor: pointer;
+}
+.fa-github:hover{
+    color: black;
+    transition: 0.9s;
+    cursor: pointer;
+}
+.fa-money-check:hover{
+    transform: translateY(-0.5em);
+    transition: 0.9s;
+    background: linear-gradient(135deg, #9900ff, #ab24c3, #f48fb1); 
+    background-size: 200% 200%; 
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    cursor: pointer;
+}
+.curve-container {
+    transform: scaleX(2.25);
+    width: 50%;
+}
+
+svg {
+    width: 100%;
+    height: auto;
+}
+.blockFive{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.contantFive{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tach{
+    width: 10%;
+}
+.tach:hover{
+    cursor: pointer;
+}
+.tone{
+    transform: translateX(800px);
+}
+.ttwo{
+    transform: translateX(-800px);
+}
+.avtor:hover{
+    cursor: pointer;
+}
+.shest:hover{
+    cursor: pointer;
+}
+#rotateMe:hover{
+    cursor: pointer;
+}
