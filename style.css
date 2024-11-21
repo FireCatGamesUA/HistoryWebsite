@@ -1,8 +1,8 @@
 @font-face{ 
-    font-family: 'Tiny'; src: url('fonts/Tiny5-Regular.ttf') format('truetype');
+    font-family: 'Tiny'; src: url('./fonts/Tiny5-Regular.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'Georgia'; src: url('fonts/Georgia-PersonalUse.otf') format('opentype');
+    font-family: 'Georgia'; src: url('./fonts/Georgia-PersonalUse.otf') format('opentype');
 }
 @media screen and (max-width: 500px){
     .scroll-content {
@@ -69,7 +69,7 @@ header{
     position: absolute;
     width: 100px;
     height: 100px;
-    background-image: url('/images/paperPlane.png'); /* Вкажіть шлях до вашого зображення літачка */
+    background-image: url('./images/paperPlane.png'); /* Вкажіть шлях до вашого зображення літачка */
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 50;
